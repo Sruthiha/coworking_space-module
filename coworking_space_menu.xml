@@ -1,0 +1,19 @@
+<!-- coworking_space/views/coworking_space_menu.xml -->
+<odoo>
+    <!-- Main Menu -->
+    <menuitem id="menu_coworking_space_root" name="Coworking Space" sequence="10"/>
+
+    <!-- Submenu -->
+    <menuitem id="menu_coworking_space_management" name="Manage Spaces" parent="menu_coworking_space_root"/>
+
+    <!-- Action for List, Form, and Kanban Views -->
+    <record id="action_coworking_space" model="ir.actions.act_window">
+        <field name="name">Coworking Spaces</field>
+        <field name="res_model">coworking.space</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id" ref="view_coworking_space_tree"/>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_coworking_space" name="Coworking Spaces" parent="menu_coworking_space_management" action="action_coworking_space"/>
+</odoo>
