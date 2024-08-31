@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_coworking_space_user,coworking.space user,model_coworking_space,,1,0,0,0
+access_coworking_space_manager,coworking.space manager,model_coworking_space,,1,1,1,1
